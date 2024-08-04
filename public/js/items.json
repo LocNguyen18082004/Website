@@ -1,0 +1,66 @@
+[
+    {
+        "id": 0,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 1,
+        "img": "img/Product/Lining2.jpg",
+        "img_hover": "img/Product/Lining2.1.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 2,
+        "img": "img/Product/Lining3.jpg",
+        "img_hover": "img/Product/Lining.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 3,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 4,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+       "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 5,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+       "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 6,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    },
+    {
+        "id": 7,
+        "img": "img/Product/Lining1.jpg",
+        "img_hover": "img/Product/Lining1.2.jpg",
+        "name": "Giày Cầu Lông Lining AYTS016-7 Chính Hãng",
+        "price": 1100000,
+        "old_price": 1320000
+    }
+]
