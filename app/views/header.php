@@ -6,7 +6,7 @@
     <title>Cửa hàng Shoes</title>
 
     <!-- Link Style CSS -->
-    <link rel="stylesheet" href="<?php echo BASE_URL ?>/public/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/public/css/styles.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>/public/css/login_regss.css">
     <!-- Link Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -54,7 +54,7 @@
                     <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
                     <img class="logo_menu" src="<?php echo BASE_URL ?>/public/img/Logo.png" style="width: 80px; height: 80px;" alt="">
 
-                    <li class="active"><a href="<?php echo BASE_URL ?>">Trang chủ</a></li>
+                    <li ><a href="<?php echo BASE_URL ?>">Trang chủ</a></li>
                     <li><a href="<?php echo BASE_URL ?>/sanpham/all">Sản phẩm</a>
                         <ul class="dropdown">
                             <?php foreach($category as $key => $cate){
@@ -69,7 +69,7 @@
                         </ul>
 
                     </li>
-                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="<?php echo BASE_URL ?>/index/about">Giới thiệu</a></li>
                     <li ><a href="<?php echo BASE_URL ?>/tintuc/all">Tin tức</a>
                         <ul>
                             <?php foreach($category_post as $key => $cate_post){

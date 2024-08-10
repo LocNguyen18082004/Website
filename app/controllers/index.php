@@ -73,6 +73,18 @@
             $this->load->view('contact');
             $this->load->view('footer');
         }
+        public function about(){
+            $table = 'tbl_category_product';
+            $table_post = 'tbl_category_post';
+            $categorymodel = $this->load->model('categorymodel');
+            $data['category'] = $categorymodel->category_home($table);
+            $data['category_post'] = $categorymodel->categorypost_home($table_post);
+
+            $this->load->view('header', $data);
+            // $this->load->view('slider', $data);
+            $this->load->view('about');
+            $this->load->view('footer');
+        }
         public function notfound(){
             
             $this->load->view('404');

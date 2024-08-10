@@ -42,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <img id="bigImg" src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $details['image_product'] ?>" alt="">
          </div>
          <div class="sm_imgs">
-            <?php if (!empty($product_images)) {
-               foreach($product_images as $img) { ?>
+            <?php if (!empty($product_imagess)) {
+               foreach($product_imagess as $img) { ?>
                      <img onclick="ChangeItemImage(this.src)" src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $img['image_path'] ?>" alt="">
                <?php }
             } else {
@@ -143,10 +143,11 @@ function increaseQuantity(productId) {
 </div>
 
 <section>
+   <div class="container">
     <h2>Add a Comment</h2>
     <form id="commentForm" action="<?php echo BASE_URL ?>/sanpham/details_product/<?php echo $details['id_product']; ?>" method="post" onsubmit="scrollToComments();">
         <input type="hidden" name="id_product" value="<?php echo htmlspecialchars($details['id_product']); ?>">
-        <label for="author_comment">Author:</label>
+        <label style="margin-top: 20px;" for="author_comment">Author:</label>
         <input type="text" name="author_comment" id="author_comment" required>
         <br>
         <label for="content_comment">Comment:</label>
@@ -172,6 +173,7 @@ function increaseQuantity(productId) {
         <?php else: ?>
             <p>No comments yet.</p>
         <?php endif; ?>
+    </div>
     </div>
 </section>
 
@@ -237,7 +239,15 @@ function increaseQuantity(productId) {
                </div>
                <div class="img_product">
                   <img src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $relate['image_product'] ?>" alt="">
-                  <img class="img_hover" src="<?php echo BASE_URL ?>/public/img/Product/Lining1.2.jpg" alt="">
+                  <?php if (!empty($product_images[$relate['id_product']])) { ?>
+                     <div class="product-images">
+                           <?php foreach ($product_images[$relate['id_product']] as $image) { ?>
+                              <img class="img_hover" src="<?php echo BASE_URL ?>/public/uploads/product/<?php echo $image['image_path'] ?>" >
+                           <?php } ?>
+                     </div>
+                  <?php } else { ?>
+                     <p>No images available.</p>
+                  <?php } ?>
                </div>
                <h3 class="name_product"><a href="<?php echo BASE_URL ?>/sanpham/details_product/<?php echo $relate['id_product'] ?>"><?php echo $relate['title_product'] ?></a></h3>
                <div class="stars">

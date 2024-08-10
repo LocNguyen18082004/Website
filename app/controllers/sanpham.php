@@ -96,9 +96,18 @@
             $cond_related = "$table_product.id_category_product=$table.id_category_product AND $table.id_category_product='$id_cate'
             AND $table_product.id_product NOT IN ('$id')";
             $data['related'] = $categorymodel->related_product_home($table,$table_product,$cond_related);
-        
+            
             // Lấy ảnh phụ
-            $data['product_images'] = $categorymodel->get_product_images($table_product_images, $id);
+            $data['product_imagess'] = $categorymodel->get_product_images($table_product_images, $id);
+
+            $data['product_index'] = $categorymodel->list_product_index($table_product);
+            // Khởi tạo mảng để lưu ảnh phụ của từng sản phẩm
+            $product_images = [];
+            foreach ($data['product_index'] as $product) {
+                $product_images[$product['id_product']] = $categorymodel->get_product_images($table_product_images, $product['id_product']);
+            }
+             // Truyền biến này vào view
+             $data['product_images'] = $product_images;
 
 
             $commentmodel = $this->load->model('commentmodel');

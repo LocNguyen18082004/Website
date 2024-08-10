@@ -2132,4 +2132,181 @@ header .links ul .btn_close_menu{
     }
 }
 
+/*---------------------------------------------------------------------------ABOUT--------------------------------------*/
 
+.about {
+    width: 100%;
+    padding: 78px 0px;
+
+}
+.about img{
+    height: auto;
+    width: 420px;
+
+}
+.about-text{
+    width: 550px;
+
+}
+.about .container{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: var(--dark-color);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: #000;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p {
+    color: #394150;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-text button {
+    background: #45a049;
+    color: var(--dark-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.about-text button:hover{
+    background: transparent;
+    border: 2px solid #45a049;
+    cursor: pointer;
+}
+
+/*------------------------------------------------Comment------------------*/
+
+/* Form bình luận */
+#commentForm {
+    margin-bottom: 30px;
+}
+
+#commentForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#commentForm input[type="text"],
+#commentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#commentForm button {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#commentForm button:hover {
+    background-color: #b71c1c;
+}
+
+/* Danh sách bình luận */
+#commentsSection ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#commentsSection ul li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #d32f2f;
+    border-radius: 4px;
+}
+
+#commentsSection ul li strong {
+    font-size: 18px;
+    color: #d32f2f;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#commentsSection ul li p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#commentsSection ul li small {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    
+}
+
+#commentsSection ul li a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#commentsSection ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    #commentForm input[type="text"],
+    #commentForm textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #commentForm button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #commentsSection ul li {
+        padding: 10px;
+    }
+
+    #commentsSection ul li strong {
+        font-size: 16px;
+    }
+
+    #commentsSection ul li p,
+    #commentsSection ul li small {
+        font-size: 14px;
+    }
+
+    #commentsSection ul li a {
+        font-size: 12px;
+    }
+}
