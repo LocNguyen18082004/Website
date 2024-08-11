@@ -57,8 +57,8 @@
     ?>
     </table>
     <div class="total">
-        <a href="<?php echo BASE_URL ?>/sanpham/all"><strong>>> Tiếp tục mua hàng</strong></a>
-        <a href="<?php echo BASE_URL ?>/giohang/dathang"><button type="submit">Tiếp tục đặt hàng</button></a>
+        <a  href="<?php echo BASE_URL ?>/sanpham/all"><strong>>> Tiếp tục mua hàng</strong></a>
+        <a  href="<?php echo BASE_URL ?>/giohang/dathang"><button class="empty" type="submit">Tiếp tục đặt hàng</button></a>
         <p>Tổng thành tiền: <span><?php echo number_format($total,0,',','.').' ₫' ?></span></p>
         </div>
     
